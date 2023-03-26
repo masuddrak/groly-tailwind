@@ -23,10 +23,13 @@
                         black: '#1c1917',
                         gray: '#6b7280',
                     },
-                   fontFamily:{
-                    bebas:['Bebas Neue', "cursive"],
-                    Montserrat:['Montserrat',"sans-serif"],
-                   },
+                    fontFamily: {
+                        bebas: ['Bebas Neue', "cursive"],
+                        Montserrat: ['Montserrat', "sans-serif"],
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "url('/img/fate.jpg')",
+                    },
                 },
             },
         }
@@ -34,18 +37,29 @@
 </head>
 
 <body>
-    <nav class="bg-white font-bebas h-20">
+    <nav class="bg-white font-bebas h-20 fixed top-0 left-0 right-0">
         <div class="flex h-20 justify-between w-full max-w-7xl mx-auto items-center px-2">
             <h1 class="text-2xl">Potoler Ma</h1>
-        <ul class="flex text-lg  gap-8 ">
-            <li>about us</li>
-            <li>our movies</li>
-            <li>service</li>
-        </ul>
+            <ul class="flex text-lg  gap-8 ">
+                <li>about us</li>
+                <li>our movies</li>
+                <li>service</li>
+            </ul>
         </div>
     </nav>
     <!-- main header -->
-    
+    <section class="h-screen pt-20 bg-no-repeat bg-[url('/img/fate.jpg')]  bg-cover">
+        <div class="h-full w-full max-w-7xl mx-auto text-white flex items-center px-2">
+            <div class="font-bebas">
+                <h1 class="text-lg">Norafate Production studio</h1>
+            <h1 class="text-7xl text-yello">Flins made to</h1>
+            <h1 class="text-7xl text-white">perfection</h1>
+            <p class="font-Montserrat max-w-lg mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem reiciendis officiis non totam! Corporis
+                autem doloribus assumenda, eveniet impedit ipsa perspiciatis delectus porro!</p>
+                <button class="border-2 py-2 px-4 hover:bg-yello hover:border-yello hover:text-black transition-all">Discover more</button>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
